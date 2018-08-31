@@ -1,7 +1,7 @@
-ograv.aux
-ograv.bbl
-ograv.bcf
-ograv.blg
-ograv.log
-ograv.pdf
-ograv.run.xml
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.pdf
+*.run.xml
