@@ -1,10 +1,19 @@
-\documentclass{article}
+\documentclass{amsart}
 \usepackage{amsmath,amssymb}
 
 \usepackage{microtype}
 \usepackage{geometry}
 \usepackage{biblatex}
 \bibliography{\jobname.bib}
+
+% \newtheorem{thm}{Theorem}[section]
+% \newtheorem{lem}[thm]{Lemma}
+% \newtheorem{prop}[thm]{Proposition}
+% \newtheorem{cor}{Corollary}
+% \newtheorem{defn}{Definition}[section]
+% \newtheorem{conj}{Conjecture}[section]
+% \newtheorem{exmp}{Example}[section]
+% \newtheorem{rem}{Remark}
 
 \def\HH{\textnormal{H}}
 
@@ -38,8 +47,6 @@ and get a nice decomposition of~$M$.
 $\bullet$\quad How does this change of coefficients interact
 with the good ordinary reduction conjecture?
 
-\section{Introduction}
-
 Let $K \subset \mathbb{C}$ be a finitely generated field,
 and let $E$ be a totally real number field.
 Let $M$ be motive (in the sense of Andr\'e)
@@ -47,15 +54,49 @@ over~$K$ with coefficients in~$E$.
 
 Let $X$ be a model of~$K$,
 and let $x \in X^\mathrm{cl}$ be a closed point.
-Let $\lambda$ be a finite place of~$E$.
 For the purpose of this article,
 we say that $M$ has \emph{good reduction} at~$x$
 if $\HH_\lambda(M)$ is unramified at~$x$
-for one (and hence, every) prime~$\ell$ that is coprime to~$x$.
+for one (and hence, every) finite place~$\lambda$ of~$E$ that is coprime to~$x$.
 
 If $M$ has good reduction at~$x$,
 we say that $M$ has \emph{ordinary} reduction
-if the Newton polygon coincideds with the Hodge polygon.
+if the Newton polygon coincides with the Hodge polygon.
+
+Claim: These polygons only depend on~$M$ and~$x$.
+Not on any choice of~$\lambda$.
+
+Claim: If $E'$ is a totally real overfield of~$E$,
+then $M \otimes_E E'$ is a motive with coefficients in~$E'$,
+and $M$ has ordinary reduction at~$x$
+if and only if $M \otimes_E E'$ has.
+
+Proof: Follow your nose, Luke!
+
+\section{Introduction}
+
+Let $X$ be an elliptic curve over~$\mathbb{Q}$.
+If $p$ is a prime, and $X$ has good reduction at~$p$,
+then we can distinguish two types of good reduction:
+so called \emph{ordinary} and \emph{supersingular} reduction.
+In the 1960s % TODO ref
+Serre proved the following facts:
+\begin{itemize}
+ \item If $X$ does not have complex multiplication,
+  then $X$ has ordinary good reduction at
+  a set of primes with density~$1$.
+ \item If $X$ has complex multiplication by an
+  imaginary quadratic field~$E$,
+  then $X$ has supersingular reduction
+  at the primes that are inert in $E/\mathbb{Q}$,
+  while $X$ has ordinary reduction at the primes that split.
+  (Both these sets have density~$1/2$.)
+\end{itemize}
+This example sketches the theme of this paper:
+we are concerned with the density of the set of places
+where a given abelian variety has ordinary good reduction.
+This question has been studied before by
+Noot, Pink, Sawin, and others.
 
 \printbibliography
 
