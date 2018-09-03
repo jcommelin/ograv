@@ -6,6 +6,8 @@
 \usepackage{biblatex}
 \bibliography{\jobname.bib}
 
+\def\HH{\textnormal{H}}
+
 \title{On ordinary good reduction of abelian varieties}
 \author{Johan Commelin}
 
@@ -38,11 +40,22 @@ with the good ordinary reduction conjecture?
 
 \section{Introduction}
 
-Let $K \subset \mathbb{C}$ be a finitely generated field.
-Let $X/K$ be a smooth projective variety.
+Let $K \subset \mathbb{C}$ be a finitely generated field,
+and let $E$ be a totally real number field.
+Let $M$ be motive (in the sense of Andr\'e)
+over~$K$ with coefficients in~$E$.
 
+Let $X$ be a model of~$K$,
+and let $x \in X^\mathrm{cl}$ be a closed point.
+Let $\lambda$ be a finite place of~$E$.
+For the purpose of this article,
+we say that $M$ has \emph{good reduction} at~$x$
+if $\HH_\lambda(M)$ is unramified at~$x$
+for one (and hence, every) prime~$\ell$ that is coprime to~$x$.
 
-There is the following general philosophy.
+If $M$ has good reduction at~$x$,
+we say that $M$ has \emph{ordinary} reduction
+if the Newton polygon coincideds with the Hodge polygon.
 
 \printbibliography
 
